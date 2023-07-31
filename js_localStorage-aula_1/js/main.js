@@ -16,10 +16,21 @@ form.addEventListener("submit", (event) => {
         "nome": nome.value,
         "quantidade": quantidade.value
     }
-    
-    adicionaItem(itemAtual)
-    
-    itens.push(itemAtual)
+
+    const existe = itens.find(elemento => elemento.nome === nome.value)
+
+    if (existe) {
+        itemAtual.id = existe.id
+        atualizaItem(itemAtual)
+        itens[existe.id] = itemAtual
+
+    } else {
+        itemAtual.id = itens.length
+
+        adicionaItem(itemAtual)
+        
+        itens.push(itemAtual)
+    }
 
     localStorage.setItem("itens", JSON.stringify(itens))
     var listaArmazenada = localStorage.getItem("listaItens");
@@ -35,6 +46,7 @@ function adicionaItem(item) {
 
     const numeroItem = document.createElement("strong")
     numeroItem.innerHTML = item.quantidade
+    numeroItem.dataset.id = item.id
 
     novoItem.appendChild(numeroItem)
 
@@ -42,6 +54,14 @@ function adicionaItem(item) {
 
     lista.appendChild(novoItem) // insere novoItem no elemento pai (lista)
 }
+
+function atualizaItem(item) {
+    document.querySelector("[data-id='"+item.id+"']").innerHTML = item.quantidade
+}
+
+
+
+
 
 
 /*
@@ -120,13 +140,69 @@ E se tirássemos essa tarefa da função adicionaItens() e puséssemos dentro da
 
 12 - Acabou que mudamos todos os parâmetros
 
+
 13 - agora chamamos a função criar elemento toda vez que atualiza a página:
 itens.forEach( (elemento) => { 
     adicionaItem(elemento)
 })
 
 
+14 - Hora de resolver os itens duplicados:
+    • primeiro busca o item "cueca" por exemplo no array "itens"
+        const existe = itens.find(elemento => elemento.nome === nome.value)
+    • aí mete a condicional no eventlistener mesmo
 
 
+15 - elemento de controle nos itens, ou seja, criar um ID
+    if (existe) {
+        console.log(quantidade.value)
+        console.log(lista)
+
+        itemAtual.id = existe.id
+    }
+
+
+16 - Mas na hora de adicionaItem nao criamos id... tem que criar. Use DATA ATTRIBUTES. Vamos criar um ID que faça com que a cada item criado, ele ganha o número do array, por exemplo, se eu tenho um item na lista, este item é id = 0, o próximo será id=1 e etc. 
+    const numeroItem = document.createElement("strong")
+    numeroItem.innerHTML = item.quantidade
+    numeroItem.dataset.id = item.id // SÓ ISSO AQUI É NOVIDADE
+
+
+17 - Já criamos o id, vamos por isso no else
+    } else {
+        itemAtual.id = itens.length // NOVIDADE
+        adicionaItem(itemAtual)
+        itens.push(itemAtual)
+    }
+
+
+18 - no if: console.log(existe.id), ele confirma o ID do elemento.
+
+
+19 - criar funcao de atualizar element. Só falta achar o strong
+    if (existe) {
+        itemAtual.id = existe.id
+        function atualizaItem(itemAtual)
+    }
+
+    atualizaItem(item) {
+        document.querySelector("[data-id='"+item.id+"']")
+    }
+    dê um console.log(document.querySelector("[data-id='"+item.id+"']")) pra ver o que vc capturou. Achamos o strong do item.
+
+
+20 - Agora substituímos a quantidade no strong
+function atualizaItem(item) {
+    document.querySelector("[data-id='"+item.id+"']").innerHTML = item.quantidade
+}
+
+
+21 - o localStorage não foi atualizado ¬¬. Tem que achar a posição do LS onde está nosso conteúdo e sobrescrever. A posição é o existe.id
+
+    if (existe) {
+        itemAtual.id = existe.id
+        atualizaItem(itemAtual)
+        itens[existe.id] = itemAtual // É ISSO AQUI
+    }
 
 */
