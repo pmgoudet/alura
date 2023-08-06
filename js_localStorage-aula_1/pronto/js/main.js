@@ -129,7 +129,7 @@ PASSO A PASSO
     })
 
 
-9 - só que aqui tem um problema de lógica e não vai carregar o conteúdo do localstorage pra lista. Então, pra inserir os dados no localStorage era preciso criar um objeto:
+9 - só que aqui tem um problema de lógica e não vai carregar o conteúdo do localstorage pra lista. Então, PARA INSERIR OS DADOS no localStorage era PRECISO CRIAR UM OBJETO:
 
 const itemAtual = {
     "nome": nome,
