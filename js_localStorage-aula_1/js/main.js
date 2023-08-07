@@ -3,7 +3,8 @@ const lista = document.getElementById("lista")
 const itens = JSON.parse(localStorage.getItem('itens')) || []
 
 itens.forEach(element => {
-    adicionaItem(element.nome, element.quantidade)
+    console.log(element)
+    adicionaItem(element)
 });
 
 form.addEventListener("submit", (event) => {
@@ -17,14 +18,14 @@ form.addEventListener("submit", (event) => {
     }
 
     const existe = itens.find((element) => element.nome === item);
-    
-    if (existe) {
-        console.log(existe)
-        console.log(existe.quantidade, itemAtual.quantidade)
-        itemAtual.quantidade = existe.quantidade
 
+    
+    if (item === "" || qtd === "") {
+        return
+    } else if (existe) {
+        
     } else {
-        adicionaItem (item, qtd)
+        adicionaItem (itemAtual)
         itens.push(itemAtual)
         localStorage.setItem('itens', JSON.stringify(itens));
     } 
@@ -33,12 +34,13 @@ form.addEventListener("submit", (event) => {
     quantidade.value = ""
 })
 
-function adicionaItem (item, qtd) {
+function adicionaItem (itemAtual) {
     const numero = document.createElement('strong')
-    numero.textContent = qtd
+    numero.textContent = itemAtual.quantidade
+    //numero.dataset.id = item.id
 
     const novoItem = document.createElement('li')
-    novoItem.textContent = item
+    novoItem.textContent = itemAtual.nome
     novoItem.classList.add('item')
     lista.appendChild(novoItem)
     
@@ -50,6 +52,9 @@ function adicionaItem (item, qtd) {
 
 /*
 
+ANTES DE RESOLVER O ID, TEM QUE RESOLVER OS DUPLICADOS
+
+numeroItem.dataset.id = item.id
 
 
 */
