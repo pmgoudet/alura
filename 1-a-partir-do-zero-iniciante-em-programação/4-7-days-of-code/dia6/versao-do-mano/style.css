@@ -1,0 +1,78 @@
+body {
+	background-color: #000;
+	background-image: url('https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80');
+}
+
+h2, p, label, li {
+	color: #fcfcfc;
+	font-family: 'Verdana',sans-serif;
+}
+
+h2 {
+	text-align: center;
+}
+
+p {
+	margin: 10px 0px 0px 0px;
+}
+
+button {
+	margin-top: 10px;
+	border: none;
+	color: #444444;
+	background-color: #fff;
+}
+
+.section {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.wrapper {
+	display: flexbox;
+	width: 350px;
+	background-color: #1D1E22;
+	padding: 25px;
+	flex-direction: column;
+	border-radius: 5px;
+	border: solid 1px #2F2F2F;
+	
+/* 	glass morph */
+background: rgba(255, 255, 255, 0.19);
+border-radius: 8px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.2px);
+-webkit-backdrop-filter: blur(8.2px);
+border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.wrapper input {
+	width: 100%;
+	border-color: #fff;
+}
+
+#listaCompras div {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#listaCompras h2 {
+	flex-basis: 100%;
+	margin: 5px;
+}
+
+.itemDiv {
+		display: flex;
+	width: 100%;
+}
+
+.itemDiv button {
+	width: 25px;
+	margin-right: 15px;
+	flex-basis: 10%;
+}
+
+itemDiv p {
+	flex-basis: 70%;
+}

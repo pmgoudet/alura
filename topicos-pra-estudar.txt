@@ -1,0 +1,22 @@
+Preciso estudar:
+
+- Estrutura de dados
+- algoritmos
+- Git => git init, git add, git commit, git push, git pull, cherry picking, stage 
+
+- como fazer o melhor uso do Figma
+- Flexbox https://cursos.alura.com.br/search/1?query=flexbox
+- grid
+- readme do github
+
+
+
+DEPOIS DE MAIS AVANÇADO	
+-  Emmet
+
+
+
+Dicas de onde ir
+
+Hacker.io => Road Map
+curso 42.sp
