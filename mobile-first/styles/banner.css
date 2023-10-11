@@ -1,13 +1,8 @@
 .banner {
-   height: 215px;
    background-image: var(--azul-degrade);
-   padding: 25px;
-   text-align: center;
-   display: flex;
-   flex-direction: column;
-   gap: 15px;
-   justify-content: center;
+   padding: 2.5em 2em;
    color: var(--branco);
+   text-align: center;
 }
 
 .banner__titulo {
@@ -19,12 +14,27 @@
    font-size: 16px;
    font-weight: 500;
    line-height: 24px;
+   margin: 1em 0;
 }
 
-.banner__busca {
+.banner__pesquisa {
+   padding: 1em;
+   outline: none;
+   border: solid 1px var(--branco);
+   border-radius: 24px;
+   background-color: transparent;
    font-size: 14px;
    font-weight: 400;
-   border: 1px solid var(--branco);
-   padding: 12px;
-   border-radius: 24px;
+   color: white;
+   text-align: center;
+   justify-content: center;
+   width: 100%;
 }
+
+.banner__pesquisa::placeholder {
+   color: var(--branco);
+   background: url(/img/lupinha.png) no-repeat;
+   background-position: 1em;
+   background-size: contain;
+}
+
