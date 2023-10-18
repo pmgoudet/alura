@@ -78,6 +78,50 @@
       </div>
    </section>
 
+   <section class="carrossel">
+      <div class="carrossel__titulo">
+         <h2>Mais vendidos</h2>
+      </div>
+      <!-- Slider main container -->
+      <div class="swiper">
+         <!-- If we need pagination -->
+         <div class="swiper-pagination"></div>
+         <!-- Additional required wrapper -->
+         <div class="swiper-wrapper">
+         <!-- Slides -->
+         <div class="swiper-slide"><img src="img/carrossel2-1.svg" alt=""></div>
+         <div class="swiper-slide"><img src="img/carrossel2-2.svg" alt=""></div>
+         <div class="swiper-slide"><img src="img/carrossel2-3.svg" alt=""></div>
+         <div class="swiper-slide"><img src="img/carrossel2-4.svg" alt=""></div>
+         </div>
+      
+         <!-- If we need navigation buttons -->
+         <div class="swiper-button-prev"></div>
+         <div class="swiper-button-next"></div>
+      </div>
+ 
+      <div class="card">
+         <div class="card__descricao">
+            <div class="descricao">
+               <img src="img/Estrelinhas.svg">
+               <h3 class="descricao__titulo">Autora do mês</h3>
+               <h2 class="descricao__titulo-livro">Juliana Agarikov</h3>
+               <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+            </div>
+            <img src="img/Perfil-escritora 1.svg" class="imagens__angular">
+         </div>
+         
+         <div class="card__botoes">
+            <ul class="botoes">
+               <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritos" class="descricao__icones__favoritos"></li>
+               <li class="botoes__item"><img src="img/Compras.svg" alt="Compras" class="descricao__icones__compras"></li>
+            </ul>
+            <a href="#" class="botoes__ancora">Saiba mais</a>
+         </div>
+      </div>
+         
+   </section>
+
    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
    <script>
       const swiper = new Swiper('.swiper', {
