@@ -2,6 +2,8 @@ var numeroSecreto = criaNumeroAleatorio ();
 let chute = document.querySelector('.container__input');
 let tentativas = 1;
 
+let pluralTentativa = 'tentativas';
+
 function textoNaTela (tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
@@ -17,29 +19,30 @@ function criaNumeroAleatorio () {
 console.log(numeroSecreto)
 
 function verificarChute () {
-    if (chute.value == numeroSecreto) {
+    if (chute.value == '') {
+        console.log('otario')
+    } else if (chute.value == numeroSecreto) {
+        tentativas == 1 ? pluralTentativa = 'tentativa' : pluralTentativa = 'tentativas';
         textoNaTela ('.container__titulo', 'Acertô, mizeravi!');
-        textoNaTela ('.texto__paragrafo', `Você descobriu o número com ${tentativas} tentativas.`);
+        textoNaTela ('.texto__paragrafo', `Você descobriu o número com ${tentativas} ${pluralTentativa}.`);
+        habilitaBotao();
     } else if (numeroSecreto > chute.value) {
         textoNaTela ('.container__titulo', 'Errou =(');
         textoNaTela ('.texto__paragrafo', 'O número que você chutou é menor que o número secreto');
+        tentativas++;
     } else {            
         textoNaTela ('.container__titulo', 'Errou =(');
         textoNaTela ('.texto__paragrafo', 'O número que você chutou é maior que o número secreto');
-        tentativas++
+        tentativas++;
     }
-     
+    chute.value = ''
 }
 
+function atualizarPagina() {
+    location.reload();
+}
 
-/* 
-titulo = Acertou! 
-ou 
-Errou =(
-
-texto = Você descobriu o número com x tentativas.
-ou 
-O numero é maior / menor que o seu chute
-*/
-
-
+function habilitaBotao() {
+    const botaoReiniciar = document.querySelector('#reiniciar');
+    botaoReiniciar.removeAttribute('disabled')
+}
