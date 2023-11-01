@@ -38,3 +38,24 @@
    background-size: contain;
 }
 
+@media screen and (min-width: 1024px) {
+   .banner {
+      padding: 5em;
+   }
+
+   .banner__titulo {
+      font-size: 36px;
+   }
+
+   .banner__texto {
+      margin: 1em;
+   }
+
+   .banner__pesquisa {
+      width: 60%;
+      margin-top: 1em;
+   }
+
+}
+
+

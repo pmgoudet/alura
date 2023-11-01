@@ -29,3 +29,20 @@
    background-color: var(--laranja);
    font-weight: 700;
 }
+
+
+@media screen and (min-width: 1024px) {
+  
+   .topicos {
+      padding: 3em;
+   }
+
+   .topicos__titulo {
+      font-size: 24px;  
+   }
+
+   .topicos__itens__link {
+      font-size: 24px;
+   }
+
+}
