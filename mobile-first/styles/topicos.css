@@ -45,4 +45,12 @@
       font-size: 24px;
    }
 
+   .contato {
+      display: flex;
+   }
+
+   .contato__descricao {
+      width: 40%;
+   }
+
 }
