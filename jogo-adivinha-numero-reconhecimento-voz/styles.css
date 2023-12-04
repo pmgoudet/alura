@@ -25,7 +25,7 @@ h1 {
 
 h3 {
    font-size: 2em;
-   margin-top: 30px;
+   margin: 30px 0;
 }
 
 .mensagem {
@@ -39,4 +39,20 @@ h3 {
    font-size: 4em;
    padding: 10px;
    margin: 20px;
+}
+
+.dica {
+   font-size: 32px;
+   margin-top: 50px;
+}
+
+.botao {
+   background-color: #FFC436;
+   font-size: 20px;
+   margin-top: 50px;
+   padding: 20px;
+   border-radius: 10px;
+   border: none;
+   font-weight: 700;
+   color: #0174BE;
 }

@@ -11,5 +11,5 @@ function gerarNumAleatorio() {
 }
 
 const numSecreto = gerarNumAleatorio();
-console.log(gerarNumAleatorio());
+console.log(numSecreto);
 
