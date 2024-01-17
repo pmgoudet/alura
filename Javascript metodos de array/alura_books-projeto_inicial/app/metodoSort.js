@@ -13,5 +13,3 @@ function ordenarPorPreco(livros) {
       ordemDePreco = true;
    }
 }
-
-
