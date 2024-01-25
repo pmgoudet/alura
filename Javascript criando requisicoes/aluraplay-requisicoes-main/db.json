@@ -1,56 +1,56 @@
 {
   "videos": [
     {
-      "id": 1,
+      "id": "1",
       "titulo": "Conhecendo a linguagem Go | Hipsters.Talks",
       "descricao": "3 mil visualizações",
       "url": "https://www.youtube.com/embed/y8FeZMv37WU",
       "imagem": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
     },
     {
-      "id": 2,
+      "id": "2",
       "titulo": "Desmistificando mobile - Linguagens e Frameworks",
       "descricao": "1,5 mil visualizações",
       "url": "https://www.youtube.com/embed/fmu1LQvZhms",
       "imagem": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
     },
     {
-      "id": 3,
+      "id": "3",
       "titulo": "Orientação a objetos com Roberta Arcoverde | #Hipster...",
       "descricao": "30 mil visualizações",
       "url": "https://www.youtube.com/embed/jpuJ1qrluoU",
       "imagem": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
     },
     {
-      "id": 4,
+      "id": "4",
       "titulo": "Linguagens e ferramentas usadas em Ciência de Dados...",
       "descricao": "2,5 mil visualizações",
       "url": "https://www.youtube.com/embed/h83e1aAM5xQ",
       "imagem": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
     },
     {
-      "id": 5,
+      "id": "5",
       "titulo": "Reencontrando a paixão por programar: Beatriz Ramerindo",
       "descricao": "1,2 mil visualizações",
       "url": "https://www.youtube.com/embed/CnB3eLTrkn4",
       "imagem": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
     },
     {
-      "id": 6,
+      "id": "6",
       "titulo": "Híbridos: Flutter e React Native | Desmistificando..",
       "descricao": "1,6 mil visualizações",
       "url": "https://www.youtube.com/embed/vf9P_PycgRw",
       "imagem": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
     },
     {
-      "id": 7,
+      "id": "7",
       "titulo": "Data Science na prática- com Jéssika Ribeiro do Grupo...",
       "descricao": "3,2 mil visualizações",
       "url": "https://www.youtube.com/embed/Nts3P35mHzE",
       "imagem": "https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png?raw=true"
     },
     {
-      "id": 8,
+      "id": "8",
       "titulo": "baNaNa | Memes do JavaScript #2",
       "descricao": "1,2 mil visualizações",
       "url": "https://www.youtube.com/embed/HBVCsBtsmzA",
@@ -61,28 +61,42 @@
       "descricao": "1 mil visualizações",
       "url": "https://www.youtube.com/embed/z43rcfjXOxU",
       "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
-      "id": 9
+      "id": "9"
     },
     {
       "titulo": "Educação coorporativa",
       "descricao": "9 mil visualizações",
       "url": "https://www.youtube.com/embed/IGFSiBJIXFQ",
       "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
-      "id": 10
+      "id": "10"
     },
     {
       "titulo": "Educação coorporativa",
       "descricao": "4 mil visualizações",
       "url": "https://www.youtube.com/embed/IGFSiBJIXFQ",
       "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
-      "id": 11
+      "id": "11"
     },
     {
       "titulo": "Educação coorporativa",
       "descricao": "7 mil visualizações",
       "url": "https://www.youtube.com/embed/IGFSiBJIXFQ",
       "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
-      "id": 12
+      "id": "12"
+    },
+    {
+      "id": "5c6c",
+      "titulo": "Gaza : Khan Younès \"encerclée\" selon Israël • FRANCE 24",
+      "descricao": "9 mil visualizações",
+      "url": "https://www.youtube.com/embed/watch?v=XRC7WOK7FO0",
+      "imagem": "https://s.france24.com/media/display/2465d166-bab6-11ee-8645-005056a97e36/w:980/p:16x9/m:%7B%22brand%22:%22FRANCE24%22,%22lang%22:%22FR%22,%22program%22:%22%22,%22cartouche%22:%22GAZA%22,%22hash%22:%226cd19fc67291e96400bc8835cde1d6691b30ffdbc8e731c7b9e2202e582e1b95%22,%22title%22:%22La%20ville%20de%20Khan%20Youn%C3%A8s%20%5C%22encercl%C3%A9e%5C%22%20selon%20Isra%C3%ABl%22,%22id%22:%225535ce5c-cd7e-11ed-854c-005056bf30b7%22%7D/FR_20240124_133353_133742_CS.jpg"
+    },
+    {
+      "id": "dc99",
+      "titulo": "Gaza : Khan Younès \"encerclée\" selon Israël • FRANCE 24",
+      "descricao": "7 mil visualizações",
+      "url": "https://www.youtube.com/embed/XRC7WOK7FO0",
+      "imagem": "https://s.france24.com/media/display/2465d166-bab6-11ee-8645-005056a97e36/w:980/p:16x9/m:%7B%22brand%22:%22FRANCE24%22,%22lang%22:%22FR%22,%22program%22:%22%22,%22cartouche%22:%22GAZA%22,%22hash%22:%226cd19fc67291e96400bc8835cde1d6691b30ffdbc8e731c7b9e2202e582e1b95%22,%22title%22:%22La%20ville%20de%20Khan%20Youn%C3%A8s%20%5C%22encercl%C3%A9e%5C%22%20selon%20Isra%C3%ABl%22,%22id%22:%225535ce5c-cd7e-11ed-854c-005056bf30b7%22%7D/FR_20240124_133353_133742_CS.jpg"
     }
   ]
 }
