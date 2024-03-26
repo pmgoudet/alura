@@ -1,0 +1,22 @@
+:root {
+    /* Colors */
+    --branco: #fff;
+    --preto: #000;
+    --neutral-c: #f5f5f5;
+    --cinza-escuro: #8c8c8c;
+    --grafite: #222;
+    --vermelho: #b81515;
+}
+
+* {
+    font-family: Montserrat;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
