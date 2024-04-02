@@ -27,6 +27,11 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    list-style-type: none;
+}
+
+.cabecalho__navegacao--link {
+   color: white;
 }
 
 .banner__img {
