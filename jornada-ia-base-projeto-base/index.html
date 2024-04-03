@@ -35,41 +35,119 @@
             </ul>
         </nav>
     </header>
-    
 
-    <div class="banner">
+    <section class="banner">
         <div class="banner__wrapper">
-            <img class="banner__img" alt="" src="./img/maldivas@2x.png" />
-            <div class="banner__descricao">
-                Somos uma agência apaixonada por criar viagens inesquecíveis. Do
-                destino à seleção das atividades, cuidamos de todos os detalhes
-                para que você aproveite ao máximo cada momento da sua jornada!
-            </div>
+            <figure class="banner__img-wrapper">
+                <img class="banner__img" alt="Banner Maldivas" src="./img/maldivas@2x.png" />
+                <figcaption class="banner__descricao">
+                    Somos uma agência apaixonada por criar viagens inesquecíveis. Do
+                    destino à seleção das atividades, cuidamos de todos os detalhes
+                    para que você aproveite ao máximo cada momento da sua jornada!
+                </figcaption>
+            </figure>
         </div>
-    </div>
-    <div class="container">
+    </section>
 
-        <div class="ofertas">
+    <main class="container">
+
+        <section class="ofertas">
             <div class="ofertas__titulo">
                 <div class="ofertas__titulo--texto">Ofertas da semana</div>
                 <div class="ofertas__titulo--sublinhado"></div>
             </div>
             <div class="ofertas__cards">
                 <div class="ofertas__cards--grupo">
-                    <div class="ofertas__cards--item ofertas__cards--japao">
+                    <!-- Oferta 1: Japão -->
+                    <article class="ofertas__cards--item ofertas__cards--japao">
                         <div class="ofertas__card">
                             <div class="ofertas__card--conteudo">
-                                <div class="ofertas__card--destino">
-                                    <div class="ofertas__card--destino-tipo">HOTEL+AÉREO</div>
-                                    <b class="ofertas__card--destino-nome">Japão</b>
-                                </div>
+                                <header class="ofertas__card--destino">
+                                    <div class="ofertas-card__destino-tipo">HOTEL+AÉREO</div>
+                                    <h2 class="ofertas__card--destino-nome">Japão</h2>
+                                </header>
                                 <div class="ofertas__card--preco">R$ 4000</div>
                                 <div class="ofertas__card--botao">
-                                    <span class="ofertas__card--botao-texto">Ver detalhes</span>
+                                    <a href="#" class="ofertas__card--botao-texto">Ver detalhes</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </article>
+        
+                    <!-- Oferta 2: San Andreas -->
+                    <article class="ofertas__cards--item ofertas__cards--san-andreas">
+                        <div class="ofertas__card">
+                            <div class="ofertas__card--conteudo">
+                                <header class="ofertas__card--destino">
+                                    <div class="ofertas-card__destino-tipo">HOTEL+AÉREO</div>
+                                    <h2 class="ofertas__card--destino-nome">San Andreas</h2>
+                                </header>
+                                <div class="ofertas__card--preco">R$ 3000</div>
+                                <div class="ofertas__card--botao">
+                                    <a href="#" class="ofertas__card--botao-texto">Ver detalhes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+        
+                    <!-- Oferta 3: Paraíba -->
+                    <article class="ofertas__cards--item ofertas__cards--paraiba">
+                        <div class="ofertas__card">
+                            <div class="ofertas__card--conteudo">
+                                <header class="ofertas__card--destino">
+                                    <div class="ofertas-card__destino-tipo">ALL INCLUSIVE+AÉREO</div>
+                                    <h2 class="ofertas__card--destino-nome">Paraíba</h2>
+                                </header>
+                                <div class="ofertas__card--preco">R$ 1200</div>
+                                <div class="ofertas__card--botao">
+                                    <a href="#" class="ofertas__card--botao-texto">Ver detalhes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+        
+                    <!-- Oferta 4: Manaus -->
+                    <article class="ofertas__cards--item ofertas__cards--manaus">
+                        <div class="ofertas__card">
+                            <div class="ofertas__card--conteudo">
+                                <header class="ofertas__card--destino">
+                                    <div class="ofertas-card__destino-tipo">ALL INCLUSIVE+AÉREO</div>
+                                    <h2 class="ofertas__card--destino-nome">Manaus</h2>
+                                </header>
+                                <div class="ofertas__card--preco">R$ 1600</div>
+                                <div class="ofertas__card--botao">
+                                    <a href="#" class="ofertas__card--botao-texto">Ver detalhes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 
+        <section class="ofertas">
+            <div class="ofertas__titulo">
+                <div class="ofertas__titulo--texto">Ofertas da semana</div>
+                <div class="ofertas__titulo--sublinhado"></div>
+            </div>
+            <div class="ofertas__cards">
+                <div class="ofertas__cards--grupo">
+                    
+                    <article class="ofertas__cards--item ofertas__cards--japao">
+                        <div class="ofertas__card">
+                            <div class="ofertas__card--conteudo">
+                                <header class="ofertas__card--destino">
+                                    <div class="ofertas__card--destino-tipo">HOTEL+AÉREO</div>
+                                    <h2 class="ofertas__card--destino-nome">Japão</h2>
+                                </header>
+                                <div class="ofertas__card--preco">R$ 4000</div>
+                                <div class="ofertas__card--botao">
+                                    <a class="ofertas__card--botao-texto">Ver detalhes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article> 
                     <div class="ofertas__cards--item  ofertas__cards--san-andreas">
                         <div class="ofertas__card">
                             <div class="ofertas__card--conteudo">
@@ -114,7 +192,8 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        -->
 
         <div class="busca">
             <div class="busca__titulo">
@@ -291,10 +370,10 @@
                         </div>
                     </div>
                 </div>
-
+ 
             </div>
         </div>
-    </div>
+    </main>
 
     <img class="pre-footer__image" alt="" src="./img/pre-footer-image.png" />
     
